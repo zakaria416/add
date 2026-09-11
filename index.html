@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tasty Burger — the best burgers and fast food in Salé. 100% fresh ingredients, halal, free delivery. Order now!" />
+    <title>Tasty Burger — Salé's Best Burgers & Fast Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ===== Navigation ===== -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">🍔</span>
+          <span class="logo-text">Tasty<span class="accent-text">Burger</span></span>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#features" class="nav-link">Why Us</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="tel:+212600000000" class="nav-cta">Order Now</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-badge">🔥 #1 Burger Spot in Salé</span>
+          <h1 class="hero-title">Bite Into <span class="accent-text">Happiness</span></h1>
+          <p class="hero-subtitle">
+            Juicy, flame-grilled burgers made with 100% fresh halal ingredients.
+            Delivered hot and fast straight to your door in Salé.
+          </p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">
+              🛒 Order Now
+            </a>
+            <a href="tel:+212600000000" class="btn btn-secondary">
+              📞 Call Us
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="15000">0</span>
+              <span class="stat-label">Burgers Served</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="30">0</span><span class="stat-plus">min</span>
+              <span class="stat-label">Avg Delivery</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="4900">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/4628466/pexels-photo-4628466.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Delicious cheeseburger with sesame seed bun" loading="eager" />
+          <div class="hero-price-tag">
+            <span class="price-label">Starting at</span>
+            <span class="price-value">35 DH</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#0d0d0d"/></svg>
+      </div>
+    </section>
+
+    <!-- ===== Features Section ===== -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">🚚</div>
+            <h3>Free Delivery</h3>
+            <p>Free delivery anywhere in Salé on orders over 100 DH. Hot and fresh, every time.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">🥬</div>
+            <h3>100% Fresh Ingredients</h3>
+            <p>We use only locally sourced, fresh vegetables and premium halal beef daily.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">☑️</div>
+            <h3>100% Halal</h3>
+            <p>All our meats are certified halal, prepared with care and the highest standards.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>From grill to your door in 30 minutes or less. Speed without compromising quality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Menu Section ===== -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Our Menu</span>
+          <h2 class="section-title">Crafted With <span class="accent-text">Passion</span></h2>
+          <p class="section-subtitle">From classic cheeseburgers to loaded fries — there's something for everyone.</p>
+        </div>
+
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="burgers">Burgers</button>
+          <button class="filter-btn" data-filter="chicken">Chicken</button>
+          <button class="filter-btn" data-filter="sides">Sides</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid">
+
+          <!-- Burgers -->
+          <div class="menu-card reveal" data-category="burgers">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/11519275/pexels-photo-11519275.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Classic Cheeseburger" loading="lazy" />
+              <span class="menu-tag">Bestseller</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Classic Cheeseburger</h3>
+                <span class="menu-price">45 DH</span>
+              </div>
+              <p>Flame-grilled beef patty, melted cheddar, crisp lettuce, tomato & house sauce.</p>
+              <button class="btn btn-order" data-item="Classic Cheeseburger" data-price="45">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="menu-card reveal" data-category="burgers">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/6088519/pexels-photo-6088519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Double Bacon Burger" loading="lazy" />
+              <span class="menu-tag">Popular</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Double Bacon Burger</h3>
+                <span class="menu-price">65 DH</span>
+              </div>
+              <p>Two beef patties, crispy bacon, double cheese, caramelized onions & smoky BBQ.</p>
+              <button class="btn btn-order" data-item="Double Bacon Burger" data-price="65">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="menu-card reveal" data-category="burgers">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/5374420/pexels-photo-5374420.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gourmet Deluxe Burger" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Gourmet Deluxe</h3>
+                <span class="menu-price">75 DH</span>
+              </div>
+              <p>Premium beef, gruyère cheese, truffle aioli, arugula & brioche bun.</p>
+              <button class="btn btn-order" data-item="Gourmet Deluxe" data-price="75">Add to Order</button>
+            </div>
+          </div>
+
+          <!-- Chicken -->
+          <div class="menu-card reveal" data-category="chicken">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/12129480/pexels-photo-12129480.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Crispy Chicken Sandwich" loading="lazy" />
+              <span class="menu-tag">New</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Crispy Chicken Sandwich</h3>
+                <span class="menu-price">50 DH</span>
+              </div>
+              <p>Buttermilk-fried chicken breast, pickles, slaw & spicy mayo on a soft bun.</p>
+              <button class="btn btn-order" data-item="Crispy Chicken Sandwich" data-price="50">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="menu-card reveal" data-category="chicken">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/10361459/pexels-photo-10361459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Chicken Wrap" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Chicken Wrap</h3>
+                <span class="menu-price">40 DH</span>
+              </div>
+              <p>Grilled chicken, fresh veggies, cheese & creamy sauce wrapped in a warm tortilla.</p>
+              <button class="btn btn-order" data-item="Chicken Wrap" data-price="40">Add to Order</button>
+            </div>
+          </div>
+
+          <!-- Sides -->
+          <div class="menu-card reveal" data-category="sides">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/9201333/pexels-photo-9201333.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Loaded Cheese Fries" loading="lazy" />
+              <span class="menu-tag">Fan Favorite</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Loaded Cheese Fries</h3>
+                <span class="menu-price">30 DH</span>
+              </div>
+              <p>Crispy fries smothered in melted cheese sauce, bacon bits & green onions.</p>
+              <button class="btn btn-order" data-item="Loaded Cheese Fries" data-price="30">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="menu-card reveal" data-category="sides">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/16962427/pexels-photo-16962427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Mix Platter" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Mix Platter</h3>
+                <span class="menu-price">55 DH</span>
+              </div>
+              <p>A sharing tray with fries, onion rings, nuggets & three dipping sauces.</p>
+              <button class="btn btn-order" data-item="Mix Platter" data-price="55">Add to Order</button>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div class="menu-card reveal" data-category="drinks">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/30660270/pexels-photo-30660270.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cookies & Cream Milkshake" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Cookies & Cream Shake</h3>
+                <span class="menu-price">35 DH</span>
+              </div>
+              <p>Thick, creamy milkshake blended with cookies and topped with whipped cream.</p>
+              <button class="btn btn-order" data-item="Cookies & Cream Shake" data-price="35">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="menu-card reveal" data-category="drinks">
+            <div class="menu-image">
+              <img src="https://images.pexels.com/photos/17558645/pexels-photo-17558645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Iced Caramel Coffee" loading="lazy" />
+            </div>
+            <div class="menu-body">
+              <div class="menu-header">
+                <h3>Iced Caramel Coffee</h3>
+                <span class="menu-price">25 DH</span>
+              </div>
+              <p>Chilled coffee with caramel syrup, milk and a whipped cream topping.</p>
+              <button class="btn btn-order" data-item="Iced Caramel Coffee" data-price="25">Add to Order</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="about" id="about">
+      <div class="container about-container">
+        <div class="about-image reveal">
+          <img src="https://images.pexels.com/photos/27049612/pexels-photo-27049612.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Chef preparing gourmet burgers" loading="lazy" />
+          <div class="about-experience-badge">
+            <span class="exp-number">5+</span>
+            <span class="exp-label">Years of<br>Grilling</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-badge">Our Story</span>
+          <h2 class="section-title">Grilled With Love in the <span class="accent-text">Heart of Salé</span></h2>
+          <p>
+            Tasty Burger was born from a simple idea: serve the juiciest, most flavorful burgers
+            in Salé using only the freshest local ingredients. What started as a small corner
+            joint has become the go-to spot for families, students, and burger lovers across the city.
+          </p>
+          <p>
+            Every patty is hand-pressed, every bun is toasted to perfection, and every sauce is
+            made in-house. We pride ourselves on fast delivery, friendly service, and a commitment
+            to halal, quality food that keeps our community coming back.
+          </p>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <span class="check-icon">✓</span>
+              <span>Hand-pressed daily fresh patties</span>
+            </div>
+            <div class="about-highlight">
+              <span class="check-icon">✓</span>
+              <span>Locally sourced vegetables & bread</span>
+            </div>
+            <div class="about-highlight">
+              <span class="check-icon">✓</span>
+              <span>Open late — cravings don't have a schedule</span>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact & Location Section ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Visit Us</span>
+          <h2 class="section-title">Find Us in <span class="accent-text">Salé</span></h2>
+          <p class="section-subtitle">Come dine in or order for delivery — we're ready to serve you.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>123 Avenue Mohammed V, Salé 11000, Morocco</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+212600000000">+212 6 00 00 00 00</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Mon – Thu: 11:00 AM – 11:00 PM<br>Fri – Sun: 11:00 AM – 1:00 AM</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hello@tastyburger.ma">hello@tastyburger.ma</a></p>
+              </div>
+            </div>
+            <a href="tel:+212600000000" class="btn btn-primary contact-cta">📞 Call to Order</a>
+          </div>
+          <div class="contact-map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.5!2d-6.7985!3d34.0531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzExLjIiTiA2wrA0Nyc1NC42Ilc!5e0!3m2!1sen!2sma!4v1700000000000"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Tasty Burger location in Salé">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-col footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">🍔</span>
+            <span class="logo-text">Tasty<span class="accent-text">Burger</span></span>
+          </a>
+          <p>Salé's favorite spot for juicy, flame-grilled burgers made with 100% fresh halal ingredients.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="social-link">f</a>
+            <a href="#" aria-label="Instagram" class="social-link">📷</a>
+            <a href="#" aria-label="WhatsApp" class="social-link">💬</a>
+            <a href="#" aria-label="TikTok" class="social-link">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#features">Why Us</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Our Menu</h4>
+          <a href="#menu">Burgers</a>
+          <a href="#menu">Chicken</a>
+          <a href="#menu">Sides</a>
+          <a href="#menu">Drinks</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>123 Avenue Mohammed V<br>Salé 11000, Morocco</p>
+          <p><a href="tel:+212600000000">+212 6 00 00 00 00</a></p>
+          <p><a href="mailto:hello@tastyburger.ma">hello@tastyburger.ma</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tasty Burger — Salé, Morocco. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ===== Floating Cart Button ===== -->
+    <div class="cart-fab" id="cartFab">
+      <span class="cart-icon">🛒</span>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+
+    <!-- ===== Cart Modal ===== -->
+    <div class="cart-modal-overlay" id="cartOverlay">
+      <div class="cart-modal">
+        <div class="cart-header">
+          <h3>Your Order</h3>
+          <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+          <p class="cart-empty">Your cart is empty. Add some delicious items!</p>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">0 DH</span>
+          </div>
+          <button class="btn btn-primary cart-checkout" id="cartCheckout">Checkout via WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Toast Notification ===== -->
+    <div class="toast" id="toast">
+      <span id="toastMessage">Added to cart!</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
